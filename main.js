@@ -1,37 +1,33 @@
-class Usuario {
-    constructor(nombre, apellido, libros, mascotas) {
-      (this.nombre = nombre),
-        (this.apellido = apellido),
-        (this.libros = libros || []),
-        (this.mascotas = mascotas || []);
-    }
-  
-    getFullName() {
-      return `${this.nombre} ${this.apellido}`;
-    }
-  
-    addMascota(mascota) {
-      this.mascotas.push(mascota);
-    }
-  
-    countMascotas() {
-      return this.mascotas.length;
-    }
-  
-    addBook(nombre, autor) {
-      this.libros.push({ nombre, autor });
-    }
-  
-    getBookNames() {
-      return this.libros.map(({ nombre }) => nombre).join(", ");
-    }
-  }
-  
-  let usuario = new Usuario("Armando", "Maldonado");
-    console.log(`El nombre de usuario es: ${usuario.getFullName()}.`);
-            usuario.addMascota("Gato");
-            usuario.addMascota("Perro");
-    console.log(`Este usuario tiene ${usuario.countMascotas()} mascotas.`);
-            usuario.addBook("Cien años de soledad", "Gabriel García");
-            usuario.addBook("Poemas", "Paul Celan");
-    console.log(`Libros del usuario: ${usuario.getBookNames()}`);
+const Contenedor = require("./Contenedor.js")
+
+let contenedor= new Contenedor("productos.txt")
+
+let producto1 ={
+  "title": "monitor",
+  "price": 1349,
+  "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-DELL-E2016HV-1.jpg"
+
+}
+let producto2 ={
+  "title": "cpu",
+  "price": 6079,
+  "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-INTEL-BX8071512600K-13913b.jpeg"
+
+}
+let producto3 ={
+  "title": "gabinete",
+  "price": 709,
+  "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-ACTECK-AC-05008-1.jpg"
+
+}
+metodos=async()=>{
+
+    console.log( await contenedor.save(producto1))
+    console.log( await contenedor.save(producto2))
+    console.log( await contenedor.save(producto3))
+    console.log( await contenedor.getAll())
+    console.log( await contenedor.getById(2))
+    console.log( await contenedor.deleteById(3))
+    console.log( await contenedor.deleteAll())
+}
+ metodos()
