@@ -1,1 +1,116 @@
-[]
+[
+  {
+    "id": 1,
+    "title": "monitor",
+    "price": 1349,
+    "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-DELL-E2016HV-1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "cpu",
+    "price": 6079,
+    "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-INTEL-BX8071512600K-13913b.jpeg"
+  },
+  {
+    "id": 4,
+    "title": "cpu",
+    "price": 6079,
+    "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-INTEL-BX8071512600K-13913b.jpeg"
+  },
+  {
+    "id": 5,
+    "title": "gabinete",
+    "price": 709,
+    "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-ACTECK-AC-05008-1.jpg"
+  },
+  {
+    "id": 6,
+    "title": "monitor",
+    "price": 1349,
+    "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-DELL-E2016HV-1.jpg"
+  },
+  {
+    "id": 7,
+    "title": "cpu",
+    "price": 6079,
+    "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-INTEL-BX8071512600K-13913b.jpeg"
+  },
+  {
+    "id": 8,
+    "title": "gabinete",
+    "price": 709,
+    "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-ACTECK-AC-05008-1.jpg"
+  },
+  {
+    "id": 9,
+    "title": "monitor",
+    "price": 1349,
+    "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-DELL-E2016HV-1.jpg"
+  },
+  {
+    "id": 10,
+    "title": "cpu",
+    "price": 6079,
+    "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-INTEL-BX8071512600K-13913b.jpeg"
+  },
+  {
+    "id": 11,
+    "title": "gabinete",
+    "price": 709,
+    "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-ACTECK-AC-05008-1.jpg"
+  },
+  {
+    "id": 12,
+    "title": "monitor",
+    "price": 1349,
+    "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-DELL-E2016HV-1.jpg"
+  },
+  {
+    "id": 13,
+    "title": "cpu",
+    "price": 6079,
+    "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-INTEL-BX8071512600K-13913b.jpeg"
+  },
+  {
+    "id": 14,
+    "title": "gabinete",
+    "price": 709,
+    "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-ACTECK-AC-05008-1.jpg"
+  },
+  {
+    "id": 15,
+    "title": "monitor",
+    "price": 1349,
+    "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-DELL-E2016HV-1.jpg"
+  },
+  {
+    "id": 16,
+    "title": "cpu",
+    "price": 6079,
+    "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-INTEL-BX8071512600K-13913b.jpeg"
+  },
+  {
+    "id": 17,
+    "title": "gabinete",
+    "price": 709,
+    "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-ACTECK-AC-05008-1.jpg"
+  },
+  {
+    "id": 18,
+    "title": "monitor",
+    "price": 1349,
+    "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-DELL-E2016HV-1.jpg"
+  },
+  {
+    "id": 19,
+    "title": "cpu",
+    "price": 6079,
+    "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-INTEL-BX8071512600K-13913b.jpeg"
+  },
+  {
+    "id": 20,
+    "title": "gabinete",
+    "price": 709,
+    "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-ACTECK-AC-05008-1.jpg"
+  }
+]
