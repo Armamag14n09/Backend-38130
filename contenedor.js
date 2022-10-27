@@ -63,7 +63,7 @@ class Contenedor{
       try {
           if(fs.existsSync(this.archivo)){
             let info= await fs.promises.readFile(this.archivo, 'utf8');
-              const dataId = info.filter(item => item.id === id);
+              const dataId = JASON.parse(info).filter(item => item.id === id);
               if (dataId.length === 0) {
               throw new Error("No se encontro un producto con el id requerido");
               } else {
@@ -81,11 +81,11 @@ class Contenedor{
       if(fs.existsSync(this.archivo)){
         let info= await fs.promises.readFile(this.archivo, 'utf8');
             console.log(`Buscando producto con id requerido..`);
-            if (info.some(item => item.id === id)) {
-                const data = await this.readFile(this.archivo);
+            if (JSON.parse(info).some(item => item.id === id)) {
+                const data = await fs.promises.readFile(this.archivo);
                 console.log(`Eliminando producto con id requerido..`);
-                const datos = data.filter(item => item.id !== id);
-                this.writeFile(this.archivo, datos);
+                const datos = JSON.parse(data).filter(item => item.id !== id);
+                await fs.promises.writeFile(this.archivo,JSON.stringify( datos,null,2));
                 console.log(`Producto con id ${id} eliminado`);
             } else {
                 throw new Error(`No se encontro el producto con el id ${id}`);
@@ -100,7 +100,7 @@ async deleteAll() {
     try {
         let nuevoArray = [];
         console.log(`Borrando datos..`);
-        await this.writeFile(this.archivo, nuevoArray);
+        await fs.promises.writeFile(this.archivo, '[]');
         console.log(`Se borraron todos los datos del archivo ${this.archivo}`);
     } catch (error) {
         console.log(`Ocurrio un error eliminando los datos: ${error.message}`);

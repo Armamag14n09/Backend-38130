@@ -26,8 +26,8 @@ metodos=async()=>{
     console.log( await contenedor.save(producto2))
     console.log( await contenedor.save(producto3))
     console.log( await contenedor.getAll())
-    console.log( await contenedor.getById(2))
+    await contenedor.getById(2)
     console.log( await contenedor.deleteById(3))
     console.log( await contenedor.deleteAll())
-}
+}  
  metodos()
