@@ -49,7 +49,7 @@ metodos=async()=>{
   const randomId = getRandomNumber(1, maxId)
   const randomProduct = await contenedor.getById(randomId)
 
-  respuesta.json(randomId)
+  respuesta.json(randomProduct)
 })
 const getRandomNumber = (minNumber, maxNumber) => {
   return Math.floor(Math.random() * ((maxNumber + 1) - minNumber) + minNumber) 
