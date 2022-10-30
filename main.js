@@ -43,14 +43,17 @@ metodos=async()=>{
     respuesta.json(all);
  });
 
- aplicacion.get('/productosRandom', async (peticion, respuesta) => {
-  const all = await contenedor.getAll();
-  const random = Math.floor(Math.random() * all.length);
-  respuesta.json({
-    random: random
-  });
-});
+ aplicacion.get('/productoRandom', async (peticion, respuesta) => {
+  const allProducts = await contenedor.getAll()
+  const maxId = allProducts.length
+  const randomId = getRandomNumber(1, maxId)
+  const randomProduct = await contenedor.getById(randomId)
 
+  respuesta.json(randomId)
+})
+const getRandomNumber = (minNumber, maxNumber) => {
+  return Math.floor(Math.random() * ((maxNumber + 1) - minNumber) + minNumber) 
+}
  const servidor = aplicacion.listen(port, () => {
     console.log(`Servidor escuchando: ${servidor.address().port}`);
  });
