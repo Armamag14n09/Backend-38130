@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "monitor",
+        "price": 1349,
+        "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-DELL-E2016HV-1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "cpu",
+        "price": 6079,
+        "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-INTEL-BX8071512600K-13913b.jpeg"
+    },
+    {
+        "id": 3,
+        "title": "gabinete",
+        "price": 709,
+        "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-ACTECK-AC-05008-1.jpg"
+    },
+    {
+        "id": 4,
+        "title": "no break",
+        "price": 2899,
+        "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-KOBLENZ-00-4257-00-2-1.jpg"
+    },
+    {
+        "id": 5,
+        "title": "ram",
+        "price": 1279,
+        "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-XPG-AX4U32008G16A-DW50-1.jpg"
+    },
+    {
+        "id": 6,
+        "title": "motherboart",
+        "price": 1399,
+        "thumbnail": "https://www.cyberpuerta.mx/img/product/XL/CP-BIOSTAR-H410MH-1.jpg"
+    },
+    {
+        "id": 7,
+        "title": "sdfsdf",
+        "price": "",
+        "thumbnail": ""
+    }
+]
